@@ -20,6 +20,20 @@ The goal is simple:
 
 ---
 
+## Philosophy
+
+Every technical note should:
+
+- Explain the problem.
+- Describe the assumptions.
+- Present the solution.
+- Discuss limitations.
+- Document future improvements.
+
+Understanding always comes before copying.
+
+---
+
 ## Repository Status
 
 This repository is in its initial stage.
