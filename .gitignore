@@ -1,0 +1,17 @@
+# Linux
+*~
+
+# Vim
+*.swp
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Python
+__pycache__/
+
+# macOS
+.DS_Store
