@@ -1,8 +1,12 @@
-# Engineering Notes for the **Creality K2 Pro** printer running **Klipper** firmware.
+# Engineering Notes for the Creality K2 Pro
+
+*A technical notebook documenting Klipper engineering decisions, experiments, and workflows.*
 
 > **Understanding before copying.**
 
 Welcome.
+
+---
 
 This repository documents the engineering decisions, experiments, configurations, and workflows developed while using the **Creality K2 Pro** running **Klipper**.
 
