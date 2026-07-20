@@ -4,11 +4,9 @@
 
 > **Understanding before copying.**
 
-Welcome.
-
 ---
 
-This repository documents the engineering decisions, experiments, configurations, and workflows developed while using the **Creality K2 Pro** running **Klipper**.
+This repository documents the engineering decisions, experiments, configurations, and workflows developed for the **Creality K2 Pro** running **Klipper**.
 
 Rather than collecting macros or configuration files, these notes explain the reasoning behind each solution, the assumptions under which it was developed, and the trade-offs that influenced its design.
 
@@ -17,6 +15,20 @@ The goal is simple:
 > **Help readers understand a solution before asking them to use it.**
 
 ---
+
+## How to Read This Repository
+
+
+These Engineering Notes are intended to be read sequentially.
+
+If you are new to the project, begin with this README and continue with
+TN-001, which introduces the overall design objectives and engineering
+approach.
+
+The remaining Technical Notes describe individual components of the
+implementation. Although they can be consulted independently as reference
+material, reading them in order provides the context behind each design
+decision.
 
 ## Current Technical Notes
 
@@ -28,7 +40,7 @@ The goal is simple:
 
 ## Philosophy
 
-Every technical note should:
+Each Technical Note aims to:
 
 - Explain the problem.
 - Describe the assumptions.
@@ -55,10 +67,18 @@ This repository will gradually document:
   
 ---
 
+
 ## Repository Status
 
-This repository is in its initial stage.
+There are often several valid engineering solutions to the same problem.
+These notes explain the reasoning behind one approach so that readers can
+evaluate, adapt, or improve it for their own needs.
 
-The original draft has been preserved intentionally. Future revisions will refine the structure, improve the explanations, and extract reusable macros without losing the history of the engineering decisions.
+This repository is under active development.
 
-> *"Engineering is a process of continuous refinement. Documentation should reflect that process."*
+Future revisions will refine the structure, improve the explanations, and
+extract reusable components while preserving the engineering rationale behind
+each design decision.
+
+> *Engineering is a process of continuous refinement. Documentation should
+> reflect that process.*
