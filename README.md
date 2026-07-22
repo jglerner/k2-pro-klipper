@@ -81,3 +81,7 @@ each design decision.
 
 > *Engineering is a process of continuous refinement. Documentation should
 > reflect that process.*
+
+---
+
+MIT License
