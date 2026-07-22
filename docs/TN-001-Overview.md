@@ -1,32 +1,18 @@
 # TN-001 — Overview
 
-> **Printer:** Creality K2 Pro
->
-> **Firmware:** 1.1.6.3
->
-> **Slicer:** OrcaSlicer
->
-> **Interface:** Fluidd
->
-> **Mods:** KAMP-K2 (grant0013), K2 Camera (DnG-Crafts)
+## Reference Configuration
 
-## Purpose
-
-Extract from a limited Klipper machine all we can "squeeze" to have a kind klipper, small but powerfull. Limited by the motherboard RAM. 
-
-...
-
-## Audience
-
-For everyone from beginner to well develloped printer. I need more contribuitions to become a reference repository of small inputs to shape a wide but limited system
-
-...
-
-## Workflow at a Glance
+| Item | Value |
+|------|-------|
+| Printer | Creality K2 Pro |
+| Firmware | 1.1.6.3 |
+| Slicer | OrcaSlicer |
+| Interface | Fluidd |
+| Mods | KAMP-K2 (grant0013), K2 Camera (DnG-Crafts) |
 
 ...
 >
-> **Environment:** Bedroom or ehatever may be your limitation room, PLA-only, no fume-sensitive
+> **Environment:** Indoor PLA printing in a shared living space.
 >
 > **Status:** First Release, may contain some inconsistencies
 >
@@ -37,10 +23,10 @@ For everyone from beginner to well develloped printer. I need more contribuition
 ## Purpose
 
 This is the front door to the TN-001 series. TN-001 is the whole
-project of setting up a custom `PRINT_START` routine for a K2 Pro that
-lives in a bedroom and only prints PLA. That means chamber temperature
+project of setting up a custom `PRINT_START` routine for a K2 Pro
+installed in a bedroom or another indoor space where fumes are not easily dispersed, and intended primarily for PLA printing. That means chamber temperature
 matters, fumes matter, and you want something that just works every
-time without babysitting it.
+time without constant supervision.
 
 The series is split into eight short notes (TN-001a through TN-001h)
 instead of one long document, so you can read the piece you need
@@ -51,10 +37,7 @@ each one, in plain language, so you can decide where to start.
 
 ## Audience
 
-You already have KAMP-K2 and K2 Camera installed on your K2 Pro, and
-you're comfortable SSHing in and editing `printer.cfg`. You don't need
-to be a Klipper expert — the notes explain the "why," not just the
-"paste this here."
+You already have KAMP-K2 and K2 Camera installed on your K2 Pro. These notes build on those projects; they do not replace them. You're comfortable SSHing into your printer and editing `printer.cfg`, but you don't need to be a Klipper expert — the notes explain the "why," not just the "paste this here."
 
 ---
 
@@ -98,7 +81,7 @@ means TN-001c won't have what it needs to run.
 
 ### TN-001c — PRINT_START Macro
 
-The main event — the full `PRINT_START` macro you paste into
+The heart of the series — the full `PRINT_START` macro you paste into
 `printer.cfg`. It checks the chamber is safe for PLA, heats up, figures
 out your bed surface, runs an adaptive mesh sized to your actual print,
 and purges before starting. This is the note you'll come back to most.
@@ -110,8 +93,7 @@ toolhead, and shuts the motors off cleanly at the end of a print.
 
 ### TN-001e — OrcaSlicer End G-Code
 
-One line. Literally just tells OrcaSlicer to call `PRINT_END` when a
-print finishes. Quick to apply once TN-001d is in place.
+A single line that instructs OrcaSlicer to invoke PRINT_END. Quick to apply once TN-001d is in place.
 
 ### TN-001f — Optional Enhancements
 
