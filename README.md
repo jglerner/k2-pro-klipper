@@ -34,8 +34,7 @@ decision.
 
 | ID | Title | Status |
 |----|-------|--------|
-| TN-001 | [PLA Bedroom PRINT_START](docs/TN-001-PLA_Bedroom_PRINT_START.md) | Draft |
-
+| TN-001 | [Overview](docs/TN-001-Overview.md) |First version |
 ---
 
 ## Philosophy
